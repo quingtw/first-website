@@ -1,57 +1,107 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #333;
+    /*    border: 1px solid black;*/
+    /*    開發用先知道各個物件的位置大小*/
+}
+
 html,
-body{
-    height: 3000px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #29323b;
 }
 
-.header {
-    
-    color: black;
-    background-image: url(../img/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 50px;
-    background-attachment: fixed;
-    cursor: progress;
-/*    filter: brightness(0.9);*/
-    
-    
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
-    
-    /* padding: 80px; */
-    padding: 80px 250px;
-    /* padding: 50px 10px 200px 400px; */
-    text-align: center;
-    /* margin-top: 50px; */
-    /* margin: 50px; */
-     margin: 0 auto; 
-/*
-    margin-left: auto;
-    margin-right: auto;
-*/
-    border: 2px solid #FF0022;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px 5px rgba(0,0,0,.5), 0 5px 5px rgb(0,0,0,.2);
+html {
+    position: relative;
 }
-/*偽元素*/
 
-/*
-.header:after{
-    content: "123";
-    width: 100px;
-    height: 1000px;
-    background-color: red;
+html:after {
+    content: "";
     display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #E2C0B9;
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     z-index: 1;
 }
-*/
-.header-content{
+
+
+/* 主色(primary) #29323b */
+
+
+/* 強調色(accent) #E2C0B9 */
+
+
+/* 字體顏色 #333 */
+
+.cv {
+    width: 700px;
+    margin: 100px auto;
+    background-color: white;
     position: relative;
-    
-    z-index: 3;
+    z-index: 5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    text-transform: capitalize;
+}
+
+.cv-header,
+.cvbody,
+.cv-footer {
+    padding: 40px 60px;
+}
+
+.cv-header {
+    background-color: #eee;
+}
+
+.cv-footer {
+    background-color: #29323b;
+}
+
+.experience {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    border-bottom: 1px dashed #555;
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+.experience>img {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 22px;
+    border: 1px dashed #eee;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.social-link:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.social-link>i.fa {
+    color: white;
 }
