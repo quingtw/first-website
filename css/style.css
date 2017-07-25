@@ -1,0 +1,57 @@
+html,
+body{
+    height: 3000px;
+}
+
+.header {
+    
+    color: black;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    background-attachment: fixed;
+    cursor: progress;
+/*    filter: brightness(0.9);*/
+    
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    /* padding: 80px; */
+    padding: 80px 250px;
+    /* padding: 50px 10px 200px 400px; */
+    text-align: center;
+    /* margin-top: 50px; */
+    /* margin: 50px; */
+     margin: 0 auto; 
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
+    border: 2px solid #FF0022;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px 5px rgba(0,0,0,.5), 0 5px 5px rgb(0,0,0,.2);
+}
+/*偽元素*/
+
+/*
+.header:after{
+    content: "123";
+    width: 100px;
+    height: 1000px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+*/
+.header-content{
+    position: relative;
+    
+    z-index: 3;
+}
